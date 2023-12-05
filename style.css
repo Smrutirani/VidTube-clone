@@ -135,12 +135,24 @@ nav{
 .items{
     margin: 5px;
     padding: 10px;
+    white-space: nowrap;
+    overflow-x: scroll;
+    
 }
 .all, .item{
     margin: 2px;
     padding: 5px;
     border: 1px solid;
     border-radius: 20px;
+    cursor: pointer;
+}
+.active, .all,.item:hover {
+    background-color: #288ff6;
+    color: #fff;
+}
+    /* this is hide your scrollbar */
+::-webkit-scrollbar {     
+    display: none;
 }
 .large-container{
     padding-left: 7%;
@@ -183,7 +195,6 @@ nav{
     margin-bottom: 5px;
 }
 
-
 @media (max-width: 900px){
     .menu-icon{
         display: none;
@@ -212,7 +223,6 @@ nav{
         width: 90px; 
     }
 }
-
 
 /* -----------play-video page ---------- */
 
